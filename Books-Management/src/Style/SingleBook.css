@@ -1,0 +1,40 @@
+.singlebook {
+    border: 1px solid black;
+    display: flex;
+    justify-content: space-evenly;
+    width: 70%;
+    margin: auto;
+    margin-top: 60px;
+    padding: 30px 10px;
+    border-radius: 10px;
+    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.5);
+}
+
+.singlebook > img {
+    width: 45%;
+}
+
+.singlebook p {
+    font-size: 1.1rem;
+    font-weight: 500;
+    display: flex;
+    justify-content: space-between;
+}
+
+.singlebook p span {
+    font-size: 1rem;
+    font-weight: 450;
+}
+
+.singlebook button{
+    border: 1px solid #171717;
+    width: 100%;
+    padding: 5px;
+    border-radius: 10px;
+    outline: none;
+    cursor: pointer;
+    font-size: 0.9rem;
+    color: #171717;
+    background-color: #f4f4f4;
+    font-weight: 600;
+}
