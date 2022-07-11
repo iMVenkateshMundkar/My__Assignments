@@ -1,0 +1,29 @@
+.App {
+  text-align: center;
+}
+
+.inputBox {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+}
+.inputBox input {
+  border: 1px solid #171717;
+  width: 30px;
+  height: 40px;
+  border-radius: 0px;
+  outline: none;
+  padding-left: 15px;
+  padding-right: 15px;
+  font-size: 1.5rem;
+}
+
+.inputBox input:nth-child(2){
+  border-left: none;
+  border-right: none;
+}
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
