@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    height: 60px;
+    background-color: #171717;
+    color: #f4f4f4;
+    /* text-align: left; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 50px;
+}
+
+.navbar__title {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.navbar__signin {
+    display: flex;
+    flex-direction: column;
+    font-size: 0.9rem;
+    font-weight: 300;
+}
+
+.navbar__signin span {
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+a {
+    text-decoration: none;
+    color: #f4f4f4;
+}
+
