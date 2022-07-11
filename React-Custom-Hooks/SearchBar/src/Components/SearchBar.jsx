@@ -5,13 +5,13 @@ import { useThrottle } from "use-throttle";
 
 function SearchBar({ loading, setLoading, onChange, suggestions }) {
   const [inputText, setInputText] = useState("");
-  const throttledText = useThrottle(inputText, 1000);
+  // const throttledText = useThrottle(inputText, 1000);
   const [active, setActive] = useState(0);
   const scrollRef = useRef();
 
-  useEffect(() => {
-    onChange(throttledText);
-  }, [throttledText, onChange]);
+  // useEffect(() => {
+  //   onChange(throttledText);
+  // }, [throttledText, onChange]);
 
   const inputChangeHandler = (e) => {
     setInputText(e.target.value.toLowerCase());
