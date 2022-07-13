@@ -1,5 +1,6 @@
 import { useDispatch, useSelector } from "react-redux";
 import "../Styles/Todos.css";
+import { Link } from "react-router-dom";
 import {
   getTodoListsFailure,
   getTodoListsRequest,
@@ -10,11 +11,11 @@ import { useEffect } from "react";
 import axios from "axios";
 import AddTodo from "./AddTodo";
 import Todo from "./Todo";
-import Navbar from "./Navbar";
 
 const Todos = () => {
   const dispatch = useDispatch();
   const todos = useSelector((state) => state.app.todos);
+  const isAuth = useSelector((state) => state.auth.isAuth);
   const getTodos = () => {
     dispatch(getTodoListsRequest());
     axios
@@ -24,32 +25,43 @@ const Todos = () => {
   };
 
   useEffect(() => {
-    if (todos.length === 0) {
+    if (todos.length === 0 && isAuth) {
       getTodos();
     }
   }, []);
   return (
     <div className="todos">
       <h3>Todos</h3>
-      <AddTodo />
-      <div>
-        <table>
-          <thead>
-            <tr>
-              <th>Toggle</th>
-              <th>Title</th>
-              <th>Status</th>
-              <th>Remove</th>
-              <th>Edit</th>
-            </tr>
-          </thead>
-          <tbody>
-            {todos.map((item) => (
-              <Todo key={item.id} item={item} />
-            ))}
-          </tbody>
-        </table>
-      </div>
+      {isAuth ? (
+        <>
+          <AddTodo />
+          <div>
+            <table>
+              <thead>
+                <tr>
+                  <th>Toggle</th>
+                  <th>Title</th>
+                  <th>Status</th>
+                  <th>Remove</th>
+                  <th>Edit</th>
+                </tr>
+              </thead>
+              <tbody>
+                {todos.map((item) => (
+                  <Todo key={item.id} item={item} />
+                ))}
+              </tbody>
+            </table>
+          </div>
+        </>
+      ) : (
+        <>
+          <h3>Login For Access To Do App</h3>
+          <Link to={'/login'}>
+            <button>Log In</button>
+          </Link>
+        </>
+      )}
     </div>
   );
 };

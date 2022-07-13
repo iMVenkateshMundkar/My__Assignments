@@ -1,5 +1,5 @@
 {
-  "name": "redux__todo",
+  "name": "react-redux-thunk",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -14,10 +14,11 @@
     "react-router-dom": "^6.3.0",
     "react-scripts": "5.0.1",
     "redux": "^4.2.0",
+    "redux-core": "^0.1.1",
+    "redux-thunk": "^2.4.1",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "dev": "concurrently \"npm run server\" \"npm run start\" ",
     "server": "json-server --watch db.json --port 8080",
     "start": "react-scripts start",
     "build": "react-scripts build",

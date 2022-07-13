@@ -1,4 +1,5 @@
 import axios from "axios";
+import '../Styles/AddTodo.css'
 import { v4 } from "uuid";
 import React, { useState } from "react";
 import { useDispatch } from "react-redux";
@@ -28,7 +29,7 @@ function AddTodo() {
     }
   };
   return (
-    <div>
+    <div className="addtodos">
       <h3>Add Todo</h3>
       <input
         type="text"

@@ -1,0 +1,9 @@
+.addtodos input {
+    width: 250px;
+    height: 23px;
+    padding-left: 20px;
+}
+
+.addtodos button {
+    padding: 4px 15px;
+}

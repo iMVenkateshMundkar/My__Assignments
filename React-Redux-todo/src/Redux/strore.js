@@ -1,4 +1,4 @@
-import { combineReducers, createStore, legacy_createStore } from "redux";
+import { combineReducers, legacy_createStore } from "redux";
 import { reducer as appTodoReducer } from "./App/reducer";
 import { reducer as authTodoReducer } from "./Auth/reducer";
 
@@ -7,6 +7,6 @@ const rootReducer = combineReducers({
   auth: authTodoReducer,
 });
 
-const store = createStore(rootReducer);
+const store = legacy_createStore(rootReducer);
 
 export { store };

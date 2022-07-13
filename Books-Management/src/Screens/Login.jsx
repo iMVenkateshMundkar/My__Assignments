@@ -12,7 +12,6 @@ const Login = () => {
   const navigate = useNavigate();
   const location = useLocation();
   const comingFrom = location.state?.from?.pathname || "/";
-  console.log(comingFrom);
   const handleSubmit = (e) => {
     e.preventDefault();
     if (email && password) {
@@ -37,7 +36,7 @@ const Login = () => {
           />
         </div>
         <div>
-          <label>Use Password</label>
+          <label>User Password</label>
           <br />
           <input
             type="password"

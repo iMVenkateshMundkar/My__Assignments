@@ -1,37 +1,33 @@
 import * as actionTypes from "./actionTypes";
 
 const initialState = {
-  isAuth: false,
-  iLoading: false,
-  token: "",
+  todos: [],
+  isLoading: false,
   isError: false,
 };
 
-const reducer = (state = initialState, action) => {
+export const getTodosReducer = (state = initialState, action) => {
   const { type, payload } = action;
   switch (type) {
-    case actionTypes.LOGIN_TODO_REQUEST:
+    case actionTypes.GET_TODOS_REQUEST:
       return {
         ...state,
         isLoading: true,
-        isAuth: false,
         isError: false,
       };
 
-    case actionTypes.LOGIN_TODO_SUCCESS:
+    case actionTypes.GET_TODOS_SUCCESS:
       return {
         ...state,
-        isAuth: true,
+        todos: payload,
         isLoading: false,
-        token: payload,
         isError: false,
       };
 
-    case actionTypes.LOGIN_TODO_FAILURE:
+    case actionTypes.GET_TODOS_FAILURE:
       return {
         ...state,
-        isAuth: false,
-        isLoading: true,
+        isLoading: false,
         isError: true,
       };
 
@@ -39,5 +35,3 @@ const reducer = (state = initialState, action) => {
       return state;
   }
 };
-
-export { reducer };
