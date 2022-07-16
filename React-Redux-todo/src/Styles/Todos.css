@@ -23,3 +23,18 @@ a {
     color: #171717;
     text-decoration: underline;
 }
+
+.todos button {
+    border: 1px solid #171717;
+    padding: 3px 20px;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    margin-top: 10px;
+    cursor: pointer;
+    background-color: #f4f4f4;
+}
+
+.todos button:hover {
+    background-color: #171717;
+    color: #f4f4f4;
+}
