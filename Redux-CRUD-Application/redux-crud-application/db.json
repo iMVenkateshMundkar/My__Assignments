@@ -1,0 +1,48 @@
+{
+  "tasks": [
+    {
+      "id": 1,
+      "title": "Task 1",
+      "description": "Description for task 1",
+      "task_status": "Todo",
+      "tags": ["Personal", "Official"],
+      "subTasks": [
+        {"subTask_title": "Task1: Sub Task 1", "status": true},
+        {"subTask_title": "Task1: Sub Task 2", "status": false}
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Task 2",
+      "description": "Description for task 2",
+      "task_status": "Done",
+      "tags": ["Personal"],
+      "subTasks": [
+        {"subTask_title": "Task2: Sub Task 1", "status": true},
+        {"subTask_title": "Task2: Sub Task 2", "status": false}
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Task 3",
+      "description": "Description for task 3",
+      "task_status": "In Progress",
+      "tags": ["Official"],
+      "subTasks": [
+        {"subTask_title": "Task3: Sub Task 1", "status": true},
+        {"subTask_title": "Task3: Sub Task 2", "status": false}
+      ]
+    },
+    {
+      "id": 4,
+      "title": "Task 4",
+      "description": "Description for task 4",
+      "task_status": "Done",
+      "tags": ["Official", "Other"],
+      "subTasks": [
+        {"subTask_title": "Task4: Sub Task 1", "status": true},
+        {"subTask_title": "Task4: Sub Task 2", "status": false}
+      ]
+    }
+  ]
+}
