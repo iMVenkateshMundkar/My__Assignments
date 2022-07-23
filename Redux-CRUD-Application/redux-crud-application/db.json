@@ -5,10 +5,15 @@
       "title": "Task 1",
       "description": "Description for task 1",
       "task_status": "Todo",
-      "tags": ["Personal", "Official"],
+      "tags": [
+        "Personal",
+        "Official"
+      ],
       "subTasks": [
-        {"subTask_title": "Task1: Sub Task 1", "status": true},
-        {"subTask_title": "Task1: Sub Task 2", "status": false}
+        {
+          "subTask_title": "Task1: Sub Task 1",
+          "status": false
+        }
       ]
     },
     {
@@ -16,10 +21,18 @@
       "title": "Task 2",
       "description": "Description for task 2",
       "task_status": "Done",
-      "tags": ["Personal"],
+      "tags": [
+        "Personal"
+      ],
       "subTasks": [
-        {"subTask_title": "Task2: Sub Task 1", "status": true},
-        {"subTask_title": "Task2: Sub Task 2", "status": false}
+        {
+          "subTask_title": "Task2: Sub Task 1",
+          "status": true
+        },
+        {
+          "subTask_title": "Task2: Sub Task 2",
+          "status": false
+        }
       ]
     },
     {
@@ -27,10 +40,18 @@
       "title": "Task 3",
       "description": "Description for task 3",
       "task_status": "In Progress",
-      "tags": ["Official"],
+      "tags": [
+        "Personal"
+      ],
       "subTasks": [
-        {"subTask_title": "Task3: Sub Task 1", "status": true},
-        {"subTask_title": "Task3: Sub Task 2", "status": false}
+        {
+          "subTask_title": "Task3: Sub Task 1",
+          "status": true
+        },
+        {
+          "subTask_title": "Task3: Sub Task 2",
+          "status": false
+        }
       ]
     },
     {
@@ -38,10 +59,19 @@
       "title": "Task 4",
       "description": "Description for task 4",
       "task_status": "Done",
-      "tags": ["Official", "Other"],
+      "tags": [
+        "Official",
+        "Others"
+      ],
       "subTasks": [
-        {"subTask_title": "Task4: Sub Task 1", "status": true},
-        {"subTask_title": "Task4: Sub Task 2", "status": false}
+        {
+          "subTask_title": "Task4: Sub Task 1",
+          "status": true
+        },
+        {
+          "subTask_title": "Task4: Sub Task 2",
+          "status": false
+        }
       ]
     }
   ]

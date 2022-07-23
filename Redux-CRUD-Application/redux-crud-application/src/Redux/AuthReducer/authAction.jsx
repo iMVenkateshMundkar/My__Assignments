@@ -46,7 +46,7 @@ const getProfile = (username, token) => (dispatch) => {
   return axios
     .get(`/user/${username}`, {
       headers: {
-        Autherization: `Bearer ${token}`,
+        Autherization: token,
       },
     })
     .then((r) => {
